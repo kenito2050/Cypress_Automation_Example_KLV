@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
 
+  projectId: "f3qpud",
   defaultCommandTimeout: 6000,
   reporter: 'cypress-mochawesome-reporter',
   "video": true,
@@ -16,6 +17,6 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
 
     },
-    specPattern:'cypress/integration/examples/*.js'
+    specPattern:'cypress/integration/*/*.js'
   },
 });
